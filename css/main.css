@@ -1211,4 +1211,8 @@ p {
   }
 }
 
+.noticias-relacionadas__item img {
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.8);
+}
+
 /*# sourceMappingURL=main.css.map */

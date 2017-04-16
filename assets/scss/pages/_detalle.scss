@@ -81,5 +81,8 @@
     @include media(md) {
       width: 25%;
     }
+    img {
+      box-shadow: 4px 4px 5px rgba(#000, 0.8);
+    }
   }
 }
