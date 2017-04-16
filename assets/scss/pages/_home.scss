@@ -1,0 +1,183 @@
+// Slideshow (Galeria de imagenes)
+.slideshow {
+  margin: em(20) 0;
+}
+// Oportunidades de negocio
+.oportunidades {
+  background: $gris-claro;
+  border-top: 6px solid $amarillo-corporativo;
+  margin: 10px auto;
+  &__item {
+    margin: 20px auto;
+  }
+  &__img {
+    border-radius: 5px;
+  }
+  &__descripcion {
+    font-family: $muli-font;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 0.2em;
+    text-align: center;
+  }
+}
+// Noticia destacada | Bloque principal
+.noticia-principal {
+  margin: 10px auto;
+}
+.destacada {
+  &__descripcion {
+    font-family: $muli-font;
+    font-size: 0.9em;
+    text-align: justify;
+    line-height: 1.5;
+    margin-top: 0.5em;
+    @include media(sm) {
+      font-size: 1.1em;
+      line-height: 1.5;
+    }
+  }
+}
+// Listado noticias
+.noticias {
+  margin: 10px auto;
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  &__img {
+    margin-bottom: 0.5em;
+  }
+}
+// Sidebar | Camersur TV
+.camersurtv {
+  margin: 0.5em auto;
+  &__video {
+    margin-top: 1em;
+  }
+}
+// Opiniones
+.opiniones {
+  &__clientes {
+    @include media(sm) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5em auto;
+    padding-bottom: 0.5em;
+    &:nth-child(1) {
+      @include borde-inferior-opiniones($amarillo-corporativo);
+    }
+    &:nth-child(2) {
+      @include borde-inferior-opiniones($azul-corporativo);
+    }
+    &:nth-child(3) {
+      @include borde-inferior-opiniones($azul-corporativo-oscuro);
+    }
+    @include media(sm) {
+      &:nth-child(1) {
+        border-bottom: none;
+      }
+      &:nth-child(2) {
+        border-bottom: none;
+      }
+      &:nth-child(3) {
+        border-bottom: none;
+      }
+    }
+  }
+  &__usuario {
+    font-family: $muli-font;
+    @include media(sm) {
+      font-size: 1.1em;
+    }
+  }
+  // Barra de colores ubicada en la parte inferior de las opiniones
+  &__colores {
+    @include media(sm) {
+      display: flex;
+      div {
+        &:nth-of-type(1) {
+          width: 33.33%;
+          @include borde-inferior-opiniones($amarillo-corporativo);
+        }
+        &:nth-of-type(2) {
+          width: 33.33%;
+          @include borde-inferior-opiniones($azul-corporativo);
+        }
+        &:nth-of-type(3) {
+          width: 33.33%;
+          @include borde-inferior-opiniones($azul-corporativo-oscuro);
+        }
+      }
+    }
+  }
+}
+// Ultimas Noticias
+.ult-noticias {
+  margin: 0.5em auto;
+  &__titulo {
+    font-family: $muli-font;
+    font-size: 1.6em;
+    margin: 1em auto;
+  }
+  &__descripcion {
+    margin: 0.3em auto;
+    padding: 0.3em;
+    &--politica {
+      @include borde-categoria-noticia("politica");
+    }
+    &--negocios {
+      @include borde-categoria-noticia("negocios");
+    }
+    &--comercio {
+      @include borde-categoria-noticia("comercio");
+    }
+    &--economia {
+      @include borde-categoria-noticia("economia");
+    }
+  }
+}
+// Anunciantes
+.anunciantes {
+  @include media(sm) {
+    margin: 1em auto;
+  }
+  &__item {
+    @include media(md) {
+      margin: 1em auto;
+    }
+  }
+}
+// Sociales
+.sociales {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1em auto;
+  padding: 0 15px;
+  @include media(sm) {
+    flex-direction: row;
+  }
+  &__item {
+    border: 1px solid rgba(#000, 0.4);
+    box-shadow: 0 0 0.5em rgba(#000, 0.6);
+    height: 460px;
+    width: 100%;
+    margin-bottom: 1em;
+    overflow: hidden;
+    @include media(sm) {
+      margin: 0 0.5em;
+    }
+  }
+}
+

@@ -1,0 +1,85 @@
+// Iconos flotantes de redes sociales
+.social-flotante {
+  &__menu {
+    display: flex;
+    flex-direction: column;
+  }
+  &__item {
+    padding: 1em;
+    &--facebook {
+      background: rgb(59, 87, 157);
+    }
+    &--twitter {
+      background: rgb(94, 169, 221);
+    }
+    &--linkedin {
+      background: rgb(0, 119, 181);
+    }
+    &--whatsapp {
+      background: rgb(37, 211, 102);
+    }
+  }
+  &__link {
+    color: #fff;
+    font-size: 1.2em;
+    &:hover {
+      color: $amarillo-corporativo;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  }
+}
+.header__detalle {
+  margin-bottom: 1em;
+  &__descripcion {
+    line-height: 1.2;
+    margin-bottom: 0.4em;
+  }
+  &__autor {
+    font-family: $josefin-font;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 0.2em;
+  }
+}
+.cuerpo-detalle {
+  &__texto {
+    line-height: 1.2;
+    margin-bottom: 1em;
+  }
+}
+.noticias-relacionadas {
+  background: $seccion-comercio;
+  margin: 1em auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @include media(sm) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  &__titulo {
+    color: #fff;
+    display: block;
+    font-family: $josefin-font;
+    font-size: 1.4em;
+    margin: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+  }
+  &__item {
+    margin: 1em auto;
+    @include media(sm) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+    }
+    @include media(md) {
+      width: 25%;
+    }
+  }
+}

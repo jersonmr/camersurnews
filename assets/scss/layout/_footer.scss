@@ -1,0 +1,81 @@
+.footer {
+  background: $azul-corporativo;
+  border-top: 6px solid $amarillo-corporativo;
+  color: #fff;
+  font-family: $muli-font;
+  margin-top: 2em;
+  padding: 1em;
+  position: relative;
+  text-align: center;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    right: 0;
+    top: -6px;
+    border-top: 6px solid $azul-corporativo-oscuro;
+  }
+  .categorias {
+    margin-bottom: 1em;
+    padding-bottom: 0.5em;
+  }
+  &__titulo {
+    color: #fff;
+    font-size: 1.4em;
+    margin-bottom: 1.5em;
+    @include media(sm) {
+      text-align: left;
+      font-size: 0.9em;
+      font-weight: bold;
+    }
+  }
+  &__menu {
+    &__item {
+      display: block;
+      margin: 0.5em auto;
+      @include media(sm) {
+        text-align: left;
+      }
+    }
+    &__link {
+      color: darken(#fff, 10%);
+      font-size: 0.9em;
+      &:hover {
+        color: $amarillo-corporativo;
+        font-weight: bold;
+        text-decoration: none;
+      }
+    }
+  }
+  // Informacion de contacto
+  .contacto {
+    margin: 1em auto;
+    font-size: 0.8em;
+    line-height: 1.5;
+    p {
+      text-align: center;
+    }
+    @include media(sm) {
+      p {
+        text-align: right;
+      }
+    }
+    @include media(md) {
+      p {
+        margin: 1em auto;
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+    }
+  }
+  // Copyright
+  .copyright {
+    font-size: 0.5em;
+    margin-top: 1em;
+    @include media(sm) {
+      text-align: center;
+      font-size: 0.65em;
+    }
+  }
+}
+

@@ -1,0 +1,166 @@
+extends inc/layout
+
+block content
+
+    include inc/_titulo-home
+
+    .container
+        .row
+            .col-xs-12
+                section(class="slideshow cmsnews-banner")
+                    img(src="img/img1.jpg", class="img-responsive slideshow__img", alt="Imagen 1")
+
+        .row
+            .col-xs-12
+                section.divisor1
+
+    .oportunidades
+        h2.cmsnews-encabezado OPORTUNIDADES DE NEGOCIO
+        .container
+            .row
+                section.text-center
+                    .col-xs-12.col-sm-6.col-md-3
+                        article.oportunidades__item
+                            img.oportunidades__img(src="http://placehold.it/237x121")
+                            p.oportunidades__descripcion Lorem Ipsum
+                    .col-xs-12.col-sm-6.col-md-3
+                        article.oportunidades__item
+                            img.oportunidades__img(src="http://placehold.it/237x121")
+                            p.oportunidades__descripcion Lorem Ipsum
+                    .col-xs-12.col-sm-6.col-md-3
+                        article.oportunidades__item
+                            img.oportunidades__img(src="http://placehold.it/237x121")
+                            p.oportunidades__descripcion Lorem Ipsum
+                    .col-xs-12.col-sm-6.col-md-3
+                        article.oportunidades__item
+                            img.oportunidades__img(src="http://placehold.it/237x121")
+                            p.oportunidades__descripcion Lorem Ipsum
+
+    .container
+        .row
+            .col-xs-12.col-md-8
+                section.noticia-principal
+                    .destacada
+                        img.destacada__img(src="img/politica1.png", class="img-responsive", alt="Política 1")
+                        h3.cmsnews-titulo Lorem Ipsum
+                        span.cmsnews-fecha 17/03/2017 11:00 a.m
+                        p.destacada__descripcion Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae lacinia mauris. Suspendisse et enim sit amet urna faucibus aliquam. Suspendisse potenti. Donec lacinia augue odio, a dictum diam tempus et. Morbi dapibus, ex a cursus dapibus, risus elit elementum nibh, in molestie ligula nisl vitae felis. Mauris congue viverra pellentesque. Nulla ullamcorper aliquam massa a aliquet. Etiam mattis tellus elit, vel efficitur purus sollicitudin in.
+
+                .clearfix
+
+                .noticias
+                    article.col-xs-12.col-sm-6.noticias__item
+                        img.noticias__img(src="img/noticia1.png", alt="noticia 1", class="img-responsive")
+                        span.cmsnews-fecha 17/03/2017 11:00 a.m
+                        h3.cmsnews-titulo.cmsnews-titulo--noticia Lorem Ipsum
+
+                    article.col-xs-12.col-sm-6.noticias__item
+                        img.noticias__img(src="img/noticia2.png", alt="noticia 2", class="img-responsive")
+                        span.cmsnews-fecha 17/03/2017 11:00 a.m
+                        h3.cmsnews-titulo.cmsnews-titulo--noticia Lorem Ipsum
+
+                    article.col-xs-12.col-sm-6.noticias__item
+                        img.noticias__img(src="img/noticia3.png", alt="noticia 3", class="img-responsive")
+                        span.cmsnews-fecha 17/03/2017 11:00 a.m
+                        h3.cmsnews-titulo.cmsnews-titulo--noticia Lorem Ipsum
+
+                    article.col-xs-12.col-sm-6.noticias__item
+                        img.noticias__img(src="img/noticia1.png", alt="noticia 4", class="img-responsive")
+                        span.cmsnews-fecha 17/03/2017 11:00 a.m
+                        h3.cmsnews-titulo.cmsnews-titulo--noticia Lorem Ipsum
+
+                    article.col-xs-12.col-sm-6.noticias__item
+                        img.noticias__img(src="img/noticia2.png", alt="noticia 5", class="img-responsive")
+                        span.cmsnews-fecha 17/03/2017 11:00 a.m
+                        h3.cmsnews-titulo.cmsnews-titulo--noticia Lorem Ipsum
+
+                    article.col-xs-12.col-sm-6.noticias__item
+                        img.noticias__img(src="img/noticia3.png", alt="noticia 6", class="img-responsive")
+                        span.cmsnews-fecha 17/03/2017 11:00 a.m
+                        h3.cmsnews-titulo.cmsnews-titulo--noticia Lorem Ipsum
+
+                .row
+                    .col-xs-12.pull-right
+                        .buttons-nav
+                            .buttons-nav__item.buttons-nav__item--prev
+                                a Más antigüos
+                            .buttons-nav__item.buttons-nav__item--next
+                                a Más recientes
+
+            // Sidebar
+            include inc/_sidebar
+
+        .row
+            .hidden-xs.col-md-12.cmsnews-banner
+                img(src="img/Banner5.png", alt="Banner publicitario", class="img-responsive")
+        .row
+            section.opiniones
+                h2.cmsnews-encabezado.cmsnews-encabezado--opinion OPINIÓN Y ANÁLISIS
+                .opiniones__clientes
+                    article.col-xs-12.col-sm-3.opiniones__item
+                        figure.opiniones__img
+                            img(src="img/opinion1.png", class="img-responsive img-circle")
+                        h3.cmsnews-titulo Lorem Ipsum
+                        p.opiniones__usuario Ramón Pacheco
+                    article.col-xs-12.col-sm-3.opiniones__item
+                        figure.opiniones__img
+                            img(src="img/opinion2.png", class="img-responsive img-circle")
+                        h3.cmsnews-titulo Lorem Ipsum
+                        p.opiniones__usuario Luisa de Gregorio
+                    article.col-xs-12.col-sm-3.opiniones__item
+                        figure.opiniones__img
+                            img(src="img/opinion3.png", class="img-responsive img-circle")
+                        h3.cmsnews-titulo Lorem Ipsum
+                        p.opiniones__usuario Matiew Forest
+                .opiniones__colores
+                    div
+                    div
+                    div
+        .row
+            section.col-xs-12.col-sm-12.col-md-8.ult-noticias
+                h1.ult-noticias__titulo ÚLTIMAS NOTICIAS
+                .row
+                    article.col-xs-12.col-sm-6.ult-noticias__item
+                        img.ult-noticias__img(src="img/un2.png", class="img-responsive")
+                        div.ult-noticias__descripcion.ult-noticias__descripcion--comercio
+                            span.cmsnews-fecha 17/03/2017 11:00 a.m
+                            h3.cmsnews-titulo "Lorem Ipsum"
+                    article.col-xs-12.col-sm-6.ult-noticias__item
+                        img.ult-noticias__img(src="img/un1.png", class="img-responsive")
+                        div.ult-noticias__descripcion.ult-noticias__descripcion--politica
+                            span.cmsnews-fecha 17/03/2017 11:00 a.m
+                            h3.cmsnews-titulo "Lorem Ipsum"
+                    article.col-xs-12.col-sm-6.ult-noticias__item
+                        img.ult-noticias__img(src="img/un1.png", class="img-responsive")
+                        div.ult-noticias__descripcion.ult-noticias__descripcion--economia
+                            span.cmsnews-fecha 17/03/2017 11:00 a.m
+                            h3.cmsnews-titulo "Lorem Ipsum"
+                    article.col-xs-12.col-sm-6.ult-noticias__item
+                        img.ult-noticias__img(src="img/un2.png", class="img-responsive")
+                        div.ult-noticias__descripcion.ult-noticias__descripcion--negocios
+                            span.cmsnews-fecha 17/03/2017 11:00 a.m
+                            h3.cmsnews-titulo "Lorem Ipsum"
+                .row
+                    .col-xs-12
+                        .buttons-nav
+                            .buttons-nav__item.buttons-nav__item--prev
+                                a Más antigüos
+                            .buttons-nav__item.buttons-nav__item--next
+                                a Más recientes
+
+            aside.hidden-xs.col-sm-12.col-md-4.anunciantes
+                .row
+                    div.col-sm-4.col-md-12.anunciantes__item
+                        img(src="img/Banner1.png", class="img-responsive anunciantes__img")
+                    div.col-sm-4.col-md-12.anunciantes__item
+                        img(src="img/Banner2.png", class="img-responsive anunciantes__img")
+                    div.col-sm-4.col-md-12.anunciantes__item
+                        img(src="img/Banner3.png", class="img-responsive anunciantes__img")
+        // Redes sociales
+        include inc/_redes
+
+
+
+
+
+

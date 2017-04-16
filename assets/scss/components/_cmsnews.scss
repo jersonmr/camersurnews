@@ -1,0 +1,51 @@
+// Encabezados
+.cmsnews-encabezado {
+  background: $azul-corporativo;
+  padding: 10px;
+  color: #fff;
+  font-family: $josefin-font;
+  text-align: center;
+  text-transform: uppercase;
+  &--opinion {
+    background: $azul-corporativo-oscuro;
+  }
+}
+// Titulo noticias
+.cmsnews-titulo {
+  font-family: $muli-font;
+  font-size: 1.6em;
+  font-weight: bold;
+  margin: 5px 0;
+  padding-bottom: 0.2em;
+  &--noticia {
+    border-bottom: 2px solid $azul-corporativo;
+    display: block;
+    font-size: 1.4em;
+    text-align: center;
+    margin-top: 0.3em;
+    width: 75%;
+  }
+  &--detalle {
+    text-transform: capitalize;
+    font-size: 1.8em;
+  }
+  &--relacionadas {
+    color: #fff;
+    font-size: 0.9em;
+    margin: 1em auto;
+    text-align: center;
+  }
+}
+// Fecha
+.cmsnews-fecha {
+  color: darken($gris-claro, 40%);
+  font-family: $muli-font;
+  font-size: 0.8em;
+}
+// Banner publicitario
+.cmsnews-banner {
+  display: flex;
+  justify-content: center;
+  margin: 1em auto;
+  text-align: center;
+}

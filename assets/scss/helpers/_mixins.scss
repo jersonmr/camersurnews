@@ -1,0 +1,74 @@
+// Posiciona absolutamente al centro
+@mixin abscenter {
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+// Retorna borde a la izquierda con color definido por categoria de noticia
+@mixin borde-categoria-noticia($categoria) {
+  @if($categoria == "politica") {
+    border-left: 0.8em solid $seccion-politica;
+  }
+  @else if($categoria == "negocios") {
+    border-left: 0.8em solid $seccion-empresas-negocios;
+  }
+  @else if($categoria == "comercio") {
+    border-left: 0.8em solid $seccion-comercio;
+  }
+  @else {
+    border-left: 0.8em solid $seccion-economia;
+  }
+}
+
+// Manejar los media queries
+// ==========  Mixins para los Media Queries  ==========
+
+@mixin media($consulta) {
+
+  $media-xxs:"(min-width : 320px)"; // iPhone Retina
+  $media-xs: "(min-width : 480px)"; // Telefonos
+  $media-sm: "(min-width: 768px)";  // Tablets
+  $media-md: "(min-width: 992px)";  // Escritorios
+  $media-lg: "(min-width: 1200px)"; // Resoluciones grandes
+
+  @if $consulta == xxs {
+    @media #{$media-xxs} { @content; }
+  }
+  @if $consulta == xs {
+    @media #{$media-xs} { @content; }
+  }
+  @else if $consulta == sm {
+    @media #{$media-sm} { @content; }
+  }
+  @else if $consulta == md {
+    @media #{$media-md}  { @content; }
+  }
+  @else if $consulta == lg {
+    @media #{$media-lg}  { @content; }
+  }
+}
+// Borde inferior para el menu del header
+@mixin borde-inferior-menu($color) {
+  border-bottom: 0.35em solid $color;
+}
+
+// Borde inferior para seccion de opiniones
+@mixin borde-inferior-opiniones($color) {
+  border-bottom: 0.2em solid $color;
+}
+
+// Manejo de temas de colores
+@mixin themify($property, $key, $themes: $themes) {
+  // Iterate over the themes
+  @each $theme, $colors in $themes {
+    // Create a selector (e.g. `.media.theme-unicorn, .theme-unicorn .media`)
+    &.theme-#{$theme},
+    .theme-#{$theme} & {
+      // Output the declaration
+      #{$property}: map-get($colors, $key);
+    }
+  }
+}

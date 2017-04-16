@@ -1,0 +1,25 @@
+// Fuentes importadas
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Muli:400,700');
+
+// Colores
+$azul-corporativo: rgb(36, 141, 198);
+$azul-corporativo-oscuro: rgb(15, 31, 46);
+$amarillo-corporativo: rgb(252, 251, 0);
+$seccion-comercio: rgb(0, 137, 114);
+$seccion-economia: rgb(242, 87, 45);
+$seccion-politica: rgb(198, 36, 60);
+$seccion-empresas-negocios: rgb(0, 103, 166);
+$gris-claro: rgb(231, 231, 231);
+
+// Fuentes
+$muli-font: 'Muli', sans-serif;
+$josefin-font: 'Josefin Sans', sans-serif;
+
+// Mapa de colores de temas
+$themes: (
+  theme-comercio: $seccion-comercio,
+  theme-economia: $seccion-economia,
+  theme-politica: $seccion-politica,
+  theme-negocios: $seccion-empresas-negocios
+) !default;
+

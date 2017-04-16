@@ -1,0 +1,59 @@
+extends inc/layout
+
+block content
+
+    include inc/_titulo-categoria
+
+    .container
+        .row
+            section.categoria-principal
+                .col-xs-12.col-sm-12.col-md-8
+                    figure.categoria-principal__img
+                        img(src="img/categoriaimg1.jpg", alt="Imagen categoria", class="img-responsive")
+                aside.col-xs-12.col-sm-12.col-md-4
+                    h2.cmsnews-titulo.cmsnews-titulo--categoria "Lorem Ipsum"
+                    span.cmsnews-fecha 17/03/2017 11:00 a.m
+                    p.categoria-texto
+                     |Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sollicitudin porttitor volutpat. Integer ac blandit augue. Ut hendrerit nisi non justo consequat auctor. Maecenas iaculis, ligula non rutrum auctor, dui risus vulputate mauris, in sollicitudin mi felis eget erat. Quisque ac neque malesuada nulla pellentesque laoreet at id sapien. Morbi convallis risus at magna congue, sed commodo nunc aliquet. Phasellus mi neque, condimentum a ipsum id, maximus ornare nisi. Curabitur nec nisi sem. Praesent aliquet odio massa, in eleifend ipsum fringilla eget. Curabitur purus orci, viverra et nisi et, hendrerit suscipit sem. Morbi mauris nisi, tempor id interdum sed, imperdiet sed nulla. Vivamus egestas pellentesque urna, eu dictum metus pretium ac. Cras condimentum diam sed fermentum rhoncus. Phasellus fermentum, diam mattis faucibus aliquet, lectus dui iaculis ligula, quis euismod ante est ut mauris. Ut rutrum mattis rhoncus. Nullam quis nulla tempor, viverra ligula eget, hendrerit sapien.
+
+        .row
+            section.categoria-secundaria
+                .col-xs-12.col-sm-6.col-md-8
+                    .row
+                        .col-xs-12
+                            figure.categoria-secundaria__img
+                                img(src="img/categoriaimg2.jpg", alt="Imagen categoria", class="img-responsive")
+                            .categoria-descripcion
+                                h2.cmsnews-titulo "Lorem Ipsum"
+                                span.cmsnews-fecha 17/03/2017 11:00 a.m
+                                p.categoria-texto
+                                    |Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sollicitudin porttitor volutpat. Integer ac blandit augue. Ut hendrerit nisi non justo consequat auctor. Maecenas iaculis, ligula non rutrum auctor, dui risus vulputate mauris, in sollicitudin mi felis eget erat. Quisque ac neque malesuada nulla pellentesque laoreet at id sapien
+
+                        .clearfix
+
+                        section.categoria-noticias
+                            .col-xs-12.col-sm-12.col-md-6
+                                article.categoria-noticias__item
+                                    img(src="img/categoriaimg3.jpg", alt="Imagen categoria", class="img-responsive")
+                                    .categoria-descripcion
+                                        h3.cmsnews-titulo "lorem Ipsum"
+                                        span.cmsnews-fecha 17/03/2017 11:00 a.m
+                                        p.categoria-texto
+                                            |Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sollicitudin porttitor volutpat. Integer ac blandit augue. Ut hendrerit nisi non justo consequat auctor. Maecenas iaculis, ligula non rutrum auctor, dui risus vulputate mauris, in sollicitudin mi felis eget erat. Quisque ac neque malesuada nulla pellentesque laoreet at id sapien
+
+                            .col-xs-12.col-sm-12.col-md-6
+                                article.categoria-noticias__item
+                                    img(src="img/categoriaimg4.jpg", alt="Imagen categoria", class="img-responsive")
+                                    .categoria-descripcion
+                                        h3.cmsnews-titulo "lorem Ipsum"
+                                        span.cmsnews-fecha 17/03/2017 11:00 a.m
+                                        p.categoria-texto
+                                            |Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sollicitudin porttitor volutpat. Integer ac blandit augue. Ut hendrerit nisi non justo consequat auctor. Maecenas iaculis, ligula non rutrum auctor, dui risus vulputate mauris, in sollicitudin mi felis eget erat. Quisque ac neque malesuada nulla pellentesque laoreet at id sapien
+
+            // Sidebar seccion categoria
+            include inc/_sidebar-category
+
+
+
+        // Redes sociales
+        include inc/_redes

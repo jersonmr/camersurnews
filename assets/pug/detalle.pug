@@ -1,0 +1,62 @@
+extends inc/layout
+
+block content
+
+    div(data-spy="affix", class="pull-left hidden-sm hidden-xs social-flotante")
+        ul.social-floatante__menu
+            li.social-flotante__item.social-flotante__item--facebook
+                a(href="#", class="social-flotante__link")
+                    span.icon-facebook
+            li.social-flotante__item.social-flotante__item--twitter
+                a(href="#", class="social-flotante__link")
+                    span.icon-twitter
+            li.social-flotante__item.social-flotante__item--linkedin
+                a(href="#", class="social-flotante__link")
+                    span.icon-linkedin
+            li.social-flotante__item.social-flotante__item--whatsapp
+                a(href="#", class="social-flotante__link")
+                    span.icon-whatsapp
+
+
+    include inc/_titulo-detalle
+
+    .container
+        .row
+            .col-xs-12.col-sm-6.col-md-9
+                .header__detalle
+                    .row
+                        section.col-xs-12
+                            figure.header-detalle__img
+                                img(src="img/detalle1.jpg", alt="Detalle", class="img-responsive")
+                            h4.header__detalle__autor Juan Enrique Pérez
+                .cuerpo-detalle
+                    .row
+                        section.col-xs-12
+                            p.cuerpo-detalle__texto
+                                |Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet quam justo. Suspendisse egestas ut nibh non convallis. Mauris eleifend leo non arcu aliquet dignissim. Cras lobortis venenatis eleifend. Nullam in purus sagittis, bibendum arcu vitae, vulputate nisl. Praesent tempor dui tincidunt risus fermentum, feugiat aliquam metus viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam venenatis purus arcu, vestibulum facilisis mauris condimentum ut. Proin at tortor vel nisi imperdiet malesuada. Nam tempus suscipit urna vitae bibendum. Nunc pretium a leo vitae posuere. Vestibulum mattis augue nisl, nec aliquet elit faucibus at. Aenean ac dapibus metus.
+                            p.cuerpo-detalle__texto
+                                |Fusce ac turpis ut neque sodales pretium at eu arcu. Donec vitae ipsum risus. Nam ante mauris, luctus at dictum eu, gravida in elit. Ut tempor sed quam tristique iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec sit amet velit lacus. Nullam gravida nulla massa, vel viverra nisl dictum at. Aliquam quis semper turpis. Aenean quis tristique eros, in tincidunt turpis. Aliquam ultricies augue quis bibendum vestibulum. Donec at venenatis mi. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                            p.cuerpo-detalle__texto
+                                |Vestibulum porttitor eu felis quis egestas. Donec vel pellentesque lectus. Mauris porttitor sed urna id viverra. Nulla vel magna in ante vulputate vehicula. Aliquam volutpat nisi eu nisl fermentum vehicula. Nam non ipsum sit amet neque porta varius non sed mi. Aenean aliquet at lectus ac semper.
+
+            include inc/_sidebar-detalle
+
+        .row
+            .divisor-noticias
+
+    .container-fluid
+        .row
+            section.noticias-relacionadas
+                h2.noticias-relacionadas__titulo Noticias Relacionadas
+                .noticias-relacionadas__item
+                    img(src="img/nr1.png", alt="noticia 1", class="img-responsive noticias-relacionadas__img")
+                    h3.cmsnews-titulo.cmsnews-titulo--relacionadas Lorem Ipsum
+                .noticias-relacionadas__item
+                    img(src="img/nr2.png", alt="noticia 2", class="img-responsive noticias-relacionadas__img")
+                    h3.cmsnews-titulo.cmsnews-titulo--relacionadas Lorem Ipsum
+                .noticias-relacionadas__item
+                    img(src="img/nr3.png", alt="noticia 3", class="img-responsive noticias-relacionadas__img")
+                    h3.cmsnews-titulo.cmsnews-titulo--relacionadas Lorem Ipsum
+                .noticias-relacionadas__item
+                    img(src="img/nr4.png", alt="noticia 4", class="img-responsive noticias-relacionadas__img")
+                    h3.cmsnews-titulo.cmsnews-titulo--relacionadas Lorem Ipsum

@@ -1,0 +1,25 @@
+$browser-context: 16; // Tamaño de fuente por defecto del navegador
+
+// Convierte pixeles a em
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+
+// Retorna un color segun su categoria
+@function categoria-color($categoria) {
+  @if($categoria == '') {
+    @return $azul-corporativo-oscuro;
+  }
+  @if($categoria == 'comercio') {
+    @return $seccion-comercio;
+  }
+  @if($categoria == 'politica') {
+    @return $seccion-politica;
+  }
+  @if($categoria == 'economia') {
+    @return $seccion-economia;
+  }
+  @if($categoria == 'negocios') {
+    @return $seccion-empresas-negocios;
+  }
+}

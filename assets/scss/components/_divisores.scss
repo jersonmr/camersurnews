@@ -1,0 +1,55 @@
+// Primera linea de division del home
+.divisor1 {
+  border: 1px solid $amarillo-corporativo;
+  margin: 0.5em auto;
+  padding: 0;
+  position: relative;
+  width: 75%;
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    right: 0;
+    border: 1px solid $azul-corporativo;
+  }
+}
+// Tercera linea de division del home
+.divisor3 {
+  border: 2px solid $amarillo-corporativo;
+  position: relative;
+  margin: 1em auto;
+  width: 100%;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    right: -2px;
+    top: -2px;
+    border: 2px solid $azul-corporativo;
+  }
+}
+// Linea de division del sidebar del detalle
+.divisor-detalle {
+  border: 4px solid $azul-corporativo;
+  margin: 1em auto;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    right: -4px;
+    top: -4px;
+    border: 4px solid $amarillo-corporativo;
+  }
+}
+// Linea de division de noticias relacionadas
+.divisor-noticias {
+  border: 2px solid $seccion-comercio;
+  margin: 1em auto;
+  height: 4px;
+  width: 40%;
+}
