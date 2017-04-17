@@ -290,17 +290,19 @@ p {
   -ms-flex-pack: justify;
   justify-content: space-between;
   height: 30px;
-  overflow: hidden;
   position: relative;
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
 }
 
 .header__cintillo:before {
   content: '';
   position: absolute;
-  border: 2px solid #fcfb00;
   bottom: -4px;
   left: 50%;
-  right: 0px;
+  right: 0;
+  border-bottom: 4px solid #fcfb00;
 }
 
 .header__cintillo__hora, .header__cintillo__info, .header__cintillo__fecha {
