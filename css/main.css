@@ -1096,6 +1096,10 @@ p {
 
 .social-flotante__item {
   padding: 1em;
+  width: 50px;
+  height: 50px;
+  transition: width 1s, background 1s;
+  transition-timing-function: ease-in-out;
 }
 
 .social-flotante__item--facebook {
@@ -1114,9 +1118,14 @@ p {
   background: #25d366;
 }
 
+.social-flotante__item:hover {
+  width: 100px;
+}
+
 .social-flotante__link {
   color: #fff;
   font-size: 1.2em;
+  position: relative;
 }
 
 .social-flotante__link:hover {

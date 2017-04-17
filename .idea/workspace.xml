@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="785a76f4-d35b-44ff-9809-f5bbf3a6df0c" name="Default" comment="" />
+    <list default="true" id="785a76f4-d35b-44ff-9809-f5bbf3a6df0c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/pages/_detalle.scss" afterPath="$PROJECT_DIR$/assets/scss/pages/_detalle.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css.map" afterPath="$PROJECT_DIR$/css/main.css.map" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -17,7 +22,55 @@
     <favorites_list name="camersurnews" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="detalle.pug" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/pug/detalle.pug">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="17" column="38" lean-forward="false" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_detalle.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/scss/pages/_detalle.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="36" column="5" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-392">
+              <caret line="1087" column="16" lean-forward="false" selection-start-line="1087" selection-start-column="1" selection-end-line="1087" selection-end-column="16" />
+              <folding>
+                <marker date="1492451612606" expanded="true" signature="19576:19664" ph="{...}" />
+                <marker date="1492451612606" expanded="true" signature="20026:20063" ph="{...}" />
+                <marker date="1492451612606" expanded="true" signature="20203:20228" ph="{...}" />
+                <marker date="1492451612606" expanded="true" signature="20260:20307" ph="{...}" />
+                <marker date="1492451612606" expanded="true" signature="20333:20441" ph="{...}" />
+                <marker date="1492451612606" expanded="true" signature="20466:20511" ph="{...}" />
+                <marker date="1492451612606" expanded="true" signature="20536:20920" ph="{...}" />
+                <marker date="1492451612606" expanded="true" signature="20948:21144" ph="{...}" />
+                <marker date="1492451612606" expanded="true" signature="20975:21142" ph="{...}" />
+                <marker date="1492451612606" expanded="true" signature="21177:21357" ph="{...}" />
+                <marker date="1492451612606" expanded="true" signature="21388:21411" ph="{...}" />
+                <marker date="1492451612606" expanded="true" signature="21439:21749" ph="{...}" />
+                <marker date="1492451612606" expanded="true" signature="21472:21747" ph="{...}" />
+                <marker date="1492451612606" expanded="true" signature="21777:21833" ph="{...}" />
+                <marker date="1492451612606" expanded="true" signature="21810:21831" ph="{...}" />
+                <marker date="1492451612606" expanded="true" signature="21868:21917" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -30,6 +83,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>footer</find>
+      <find>detalle</find>
+      <find>social-flotante</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -69,8 +124,8 @@
         <option value="$PROJECT_DIR$/assets/pug/inc/_sidebar.pug" />
         <option value="$PROJECT_DIR$/assets/pug/inc/_navbar.pug" />
         <option value="$PROJECT_DIR$/assets/scss/layout/_navigation.scss" />
-        <option value="$PROJECT_DIR$/assets/scss/pages/_detalle.scss" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/assets/scss/pages/_detalle.scss" />
       </list>
     </option>
   </component>
@@ -102,6 +157,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -124,7 +181,47 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="camersurnews" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="camersurnews" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scss" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="camersurnews" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="camersurnews" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scss" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -148,8 +245,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -263,16 +358,18 @@
       <workItem from="1492262821891" duration="4054000" />
       <workItem from="1492352152293" duration="11799000" />
       <workItem from="1492374046781" duration="2085000" />
+      <workItem from="1492445081064" duration="2907000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115652000" />
+    <option name="totallyTimeSpent" value="118559000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1852123" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1852123" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -426,13 +523,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
           <caret line="150" column="36" lean-forward="false" selection-start-line="150" selection-start-column="36" selection-end-line="150" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="198" column="13" lean-forward="false" selection-start-line="198" selection-start-column="13" selection-end-line="198" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -623,27 +713,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/pug/detalle.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-998">
-          <caret line="17" column="38" lean-forward="false" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="6" lean-forward="true" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-392">
+          <caret line="1087" column="16" lean-forward="false" selection-start-line="1087" selection-start-column="1" selection-end-line="1087" selection-end-column="16" />
+          <folding>
+            <marker date="1492451612606" expanded="true" signature="19576:19664" ph="{...}" />
+            <marker date="1492451612606" expanded="true" signature="20026:20063" ph="{...}" />
+            <marker date="1492451612606" expanded="true" signature="20203:20228" ph="{...}" />
+            <marker date="1492451612606" expanded="true" signature="20260:20307" ph="{...}" />
+            <marker date="1492451612606" expanded="true" signature="20333:20441" ph="{...}" />
+            <marker date="1492451612606" expanded="true" signature="20466:20511" ph="{...}" />
+            <marker date="1492451612606" expanded="true" signature="20536:20920" ph="{...}" />
+            <marker date="1492451612606" expanded="true" signature="20948:21144" ph="{...}" />
+            <marker date="1492451612606" expanded="true" signature="20975:21142" ph="{...}" />
+            <marker date="1492451612606" expanded="true" signature="21177:21357" ph="{...}" />
+            <marker date="1492451612606" expanded="true" signature="21388:21411" ph="{...}" />
+            <marker date="1492451612606" expanded="true" signature="21439:21749" ph="{...}" />
+            <marker date="1492451612606" expanded="true" signature="21472:21747" ph="{...}" />
+            <marker date="1492451612606" expanded="true" signature="21777:21833" ph="{...}" />
+            <marker date="1492451612606" expanded="true" signature="21810:21831" ph="{...}" />
+            <marker date="1492451612606" expanded="true" signature="21868:21917" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/pug/detalle.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="17" column="38" lean-forward="false" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/scss/pages/_detalle.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="84" column="23" lean-forward="false" selection-start-line="84" selection-start-column="23" selection-end-line="84" selection-end-column="23" />
-          <caret line="84" column="19" lean-forward="false" selection-start-line="84" selection-start-column="19" selection-end-line="84" selection-end-column="19" />
+        <state relative-caret-position="504">
+          <caret line="36" column="5" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
           <folding />
         </state>
       </provider>
