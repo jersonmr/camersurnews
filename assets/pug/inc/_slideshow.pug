@@ -1,0 +1,28 @@
+.container
+    .row
+        .col-xs-12
+            section(class="slideshow cmsnews-banner")
+                #Carousel-Noticias.carousel.slide(data-ride='carousel')
+                    // Indicators
+                    ol.carousel-indicators
+                        li.active(data-target='#Carousel-Noticias', data-slide-to='0')
+                        li(data-target='#Carousel-Noticias', data-slide-to='1')
+                        li(data-target='#Carousel-Noticias', data-slide-to='2')
+                        li(data-target='#Carousel-Noticias', data-slide-to='3')
+                    // Wrapper for slides
+                    .carousel-inner(role='listbox')
+                        .item.active
+                            img(src='http://lorempixel.com/1024/468/business/1', alt='Chania', class="img-responsive")
+                        .item
+                            img(src='http://lorempixel.com/1024/468/business/2', alt='Chania', class="img-responsive")
+                        .item
+                            img(src='http://lorempixel.com/1024/468/business/3', alt='Flower', class="img-responsive")
+                        .item
+                            img(src='http://lorempixel.com/1024/468/business/4', alt='Flower', class="img-responsive")
+                    // Left and right controls
+                    a.left.carousel-control(href='#Carousel-Noticias', role='button', data-slide='prev')
+                        span.icon-chevron-left(aria-hidden='true')
+                        span.sr-only Previous
+                    a.right.carousel-control(href='#Carousel-Noticias', role='button', data-slide='next')
+                        span.icon-chevron-right(aria-hidden='true')
+                        span.sr-only Next

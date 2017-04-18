@@ -153,7 +153,7 @@ p {
 }
 
 .navbar-menu .navbar-default .navbar-nav li:last-child {
-  padding-bottom: none;
+  padding-bottom: 0;
 }
 
 @media (min-width: 992px) {
@@ -217,7 +217,13 @@ p {
 
 @media (min-width: 992px) {
   .caja-busqueda {
-    width: 25%;
+    width: 15%;
+  }
+}
+
+@media (min-width: 992px) {
+  .caja-busqueda .form-control {
+    display: none;
   }
 }
 
@@ -240,7 +246,7 @@ p {
 
 @media (min-width: 992px) {
   .header__navegacion .contenedor-logo {
-    width: 25%;
+    width: 40%;
   }
 }
 
@@ -344,7 +350,7 @@ p {
   display: -ms-flexbox;
   display: flex;
   padding: 0;
-  width: 6em;
+  width: 6.5em;
 }
 
 .header__cintillo__fecha__dia-mes {
@@ -539,14 +545,18 @@ p {
 }
 
 .cmsnews-banner {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   margin: 1em auto;
-  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .cmsnews-banner {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
 }
 
 .buttons-nav {
@@ -771,6 +781,19 @@ p {
 
 .slideshow {
   margin: 1.25em 0;
+}
+
+.carousel-control {
+  top: 50%;
+  background-image: none !important;
+  -webkit-filter: none !important;
+  filter: none !important;
+}
+
+@media (min-width: 768px) {
+  .carousel-control {
+    font-size: 2em;
+  }
 }
 
 .oportunidades {
@@ -1098,6 +1121,15 @@ p {
   padding: 1em;
   width: 50px;
   height: 50px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   transition: width 1s, background 1s;
   transition-timing-function: ease-in-out;
 }

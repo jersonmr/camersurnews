@@ -8,7 +8,7 @@
     }
     .contenedor-logo {
       @include media(md) {
-        width: 25%;
+        width: 40%;
       }
       .logo {
         @include media(sm) {
@@ -35,8 +35,7 @@
     display: flex;
     justify-content: space-between;
     height: 30px;        
-    position: relative;  
-    //transform: translateX(0);
+    position: relative;
     width: 100%;
     &:before {
       content: '';
@@ -77,7 +76,7 @@
     &__fecha {
       display: flex;
       padding: 0;
-      width: 6em;
+      width: 6.5em;
       &__dia-mes {
         background: $amarillo-corporativo;
         color: $azul-corporativo-oscuro;

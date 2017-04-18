@@ -64,7 +64,7 @@
           }
         }
         &:last-child {
-          padding-bottom: none;
+          padding-bottom: 0;
         }
       }
     }
@@ -113,7 +113,12 @@
 // Caja de busqueda
 .caja-busqueda {
   @include media(md) {
-    width: 25%;
+    width: 15%;
+  }
+  .form-control {
+    @include media(md) {
+      display: none;
+    }
   }
 }
 

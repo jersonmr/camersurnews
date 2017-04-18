@@ -2,6 +2,14 @@
 .slideshow {
   margin: em(20) 0;
 }
+.carousel-control {
+  top: 50%;
+  background-image:none !important;
+  filter:none !important;
+  @include media(sm) {
+    font-size: 2em;
+  }
+}
 // Oportunidades de negocio
 .oportunidades {
   background: $gris-claro;
