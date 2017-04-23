@@ -20,7 +20,7 @@
     }
     .navbar-toggle {
       background-color: rgb(251, 173, 23);
-      boder-color: #fff;
+      border-color: #fff;
       &:hover {
         background-color: rgb(228, 158, 21);
       }
@@ -51,9 +51,12 @@
           color: #f5f5f5;
           @include media(sm) {
             color: $azul-corporativo-oscuro;
-            font-size: 0.6em;
+            font-size: 0.65em;
             margin: 0;
             padding: 0.4em;
+          }
+          @include media(md) {
+            font-size: 0.8em;
           }
           &:hover {
             color: $amarillo-corporativo;
@@ -91,6 +94,9 @@
       }
       &:nth-of-type(5) {
         @include borde-inferior-menu($seccion-empresas-negocios);
+        @include media(sm) {
+          flex: 2;
+        }
       }
       @include media(sm) {
         padding: 0 0.5em;

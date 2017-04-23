@@ -93,7 +93,7 @@ p {
 
 .navbar-menu .navbar-default .navbar-toggle {
   background-color: #fbad17;
-  boder-color: #fff;
+  border-color: #fff;
 }
 
 .navbar-menu .navbar-default .navbar-toggle:hover {
@@ -135,9 +135,15 @@ p {
 @media (min-width: 768px) {
   .navbar-menu .navbar-default .navbar-nav li a {
     color: #0f1f2e;
-    font-size: 0.6em;
+    font-size: 0.65em;
     margin: 0;
     padding: 0.4em;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-menu .navbar-default .navbar-nav li a {
+    font-size: 0.8em;
   }
 }
 
@@ -186,6 +192,14 @@ p {
 
 .navbar-menu .menu__item:nth-of-type(5) {
   border-bottom: 0.35em solid #0067a6;
+}
+
+@media (min-width: 768px) {
+  .navbar-menu .menu__item:nth-of-type(5) {
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+  }
 }
 
 @media (min-width: 768px) {
