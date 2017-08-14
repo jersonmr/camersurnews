@@ -6,11 +6,9 @@ aside.col-xs-12.col-md-4.publicidad
                     span.icon-envelope-o
                     | Boletines
                 .boletin__acciones
-                    h2.boletin__acciones__btnemail
-                        a(href="#") E-Mail
                     h2.boletin__acciones__btnemail.boletin__acciones__btnemail--suscribete
-                        a(href="#") Suscríbete
-                p.boletin__anteriores
+                        a(href="#", data-toggle="modal", data-target="#bloque-newsletter") Suscríbete
+                p.boletin__anteriores.text-center
                     a(href="#") Boletines anteriores
             section.camersurtv
                 h2.boletin__titulo CAMERSUR TV
@@ -19,3 +17,5 @@ aside.col-xs-12.col-md-4.publicidad
                         |Tu navegador no soporta la etiqueta video
             section.hidden-xs.hidden-sm.publicidad
                 img(src="img/esmitecp.png", alt="Esmitecp", class="img-responsive")
+
+include ../modals/newsletter

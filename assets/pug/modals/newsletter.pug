@@ -1,0 +1,19 @@
+#bloque-newsletter.modal.fade(tabindex='-1', role='dialog')
+  .modal-dialog(role='document')
+    .modal-content
+      .modal-header
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+          span(aria-hidden='true') ×
+        h4.modal-title(style="font-family:'Muli', sans-serif") SUSCRÍBETE AHORA
+      .modal-body(style="font-family:'Muli', sans-serif")
+        form(action="", method="post")
+          .form-group
+            .input-group.input-group-lg
+              span#sizing-addon1.input-group-addon Nombre
+              input.form-control(required, type='text', name='nombre', placeholder='Nombre')
+          .form-group
+            .input-group.input-group-lg
+              span#sizing-addon2.input-group-addon Email
+              input.form-control(required, type='email', name='email', placeholder='Correo electrónico')
+          .form.form-group.text-center
+            input(type="submit", class="btn btn-primary text-center", value="¡Quiero suscribirme!")

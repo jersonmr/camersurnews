@@ -7,16 +7,55 @@
   .navbar-default {
     background-color: $azul-corporativo-oscuro;
     border-color: darken($azul-corporativo, 10%);
-    @include media(sm){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .navbar-brand {
+      order: 1;
+    }
+    .boton-buscar {
+      order: 2;
+      @include media(md) {
+        order: 4;
+      }
+    }
+    .navbar-toggle {
+      order: 3;
+    }
+    #menu-top {
+      flex: 1 1 100%;
+      order: 4;
+      @include media(sm) {
+        width: 100%;
+        color: #fff;
+        flex: 1;
+        ul {
+          a {
+            color: #fff;
+            @include media(md) {
+              color: $azul-corporativo-oscuro;
+              font-size: 0.69em;
+            }
+            @include media(lg) {
+              font-size: 0.9em;
+            }
+          }
+        }
+      }
+      @include media(md) {
+        order: 2;
+      }
+    }
+    @include media(md){
       background: none;
       border: none;
       border-radius: 0;
-      border-right: 2px solid rgba(15, 31, 46, 0.5);
       margin-bottom: 0;
       padding-top: 0.5em;
     }
     @include media(md) {
-      border-left: 2px solid rgba(15, 31, 46, 0.5);
+      flex-wrap: nowrap;
     }
     .navbar-toggle {
       background-color: rgb(251, 173, 23);
@@ -35,11 +74,6 @@
       color: #f7f7f7;
       font-size: 1.1em;
       text-transform: uppercase;
-    }
-    .navbar-form {
-      .btn-default {
-        color: $amarillo-corporativo;
-      }
     }
     .navbar-nav {
       margin: 0 -15px;
@@ -72,15 +106,22 @@
       }
     }
   }
+
   // Menu desplegable superior
   .menu {
+    @include media(sm) {
+      border-right: 2px solid rgba(15, 31, 46, 0.5);
+    }
     @include media(md) {
+      border-left: 2px solid rgba(15, 31, 46, 0.5);
+      padding: 0 1em;
       display: flex;
       justify-content: space-between;
       width: 100%;
     }
     &__item {
-      &:nth-of-type(1) {
+
+      /*&:nth-of-type(1) {
         @include borde-inferior-menu($amarillo-corporativo);
       }
       &:nth-of-type(2) {
@@ -97,12 +138,30 @@
         @include media(sm) {
           flex: 2;
         }
-      }
+      }*/
       @include media(sm) {
         padding: 0 0.5em;
       }
       @include media(md) {
         flex: 1;
+      }
+    }
+    .inicio {
+      @include borde-inferior-menu($amarillo-corporativo);
+    }
+    .comercio {
+      @include borde-inferior-menu($seccion-comercio);
+    }
+    .economia {
+      @include borde-inferior-menu($seccion-economia);
+    }
+    .politica {
+      @include borde-inferior-menu($seccion-politica);
+    }
+    .negocios {
+      @include borde-inferior-menu($seccion-empresas-negocios);
+      @include media(sm) {
+        flex: 2;
       }
     }
     &__link {
@@ -116,15 +175,54 @@
     }
   }
 }
-// Caja de busqueda
-.caja-busqueda {
-  @include media(md) {
-    width: 15%;
+
+// Boton de busqueda
+.boton-buscar {
+  background: transparent;
+  border: 0;
+  color: #fff;
+  font-size: 2rem;
+  margin: 0 0.5rem 0 auto;
+  padding: 0 0.5rem;
+  text-shadow: 2px 1px #333;
+  &:focus {
+    outline: 0;
   }
-  .form-control {
-    @include media(md) {
-      display: none;
-    }
+  @include media(md) {
+    color: $amarillo-corporativo;
   }
 }
+
+// Estilos para la caja de busqueda
+#bloque-buscar {
+  flex: 1 1 100%;
+  order: 5;
+  width: 100%;
+}
+.contenedor-bloque-buscar {
+  display: flex;
+  font-family: $muli-font;
+  height: 3rem;
+  margin: 1rem 0;
+
+  input[type="text"] {
+    background-color: $gris-claro;
+    border: 0;
+    border-radius: 5px 0 0 5px;
+    padding: 1rem;
+    flex: 1 1 auto;
+    width: 70%;
+  }
+
+  input[type="submit"] {
+    flex: 1 1 auto;
+    border: 0;
+    border-radius: 0 5px 5px 0;
+    background: $azul-corporativo;
+    color: #fff;
+    flex: 1 1 auto;
+    padding: 0 1rem;
+  }
+}
+
 

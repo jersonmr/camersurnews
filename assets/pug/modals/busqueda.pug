@@ -1,0 +1,13 @@
+#caja-busqueda.modal.fade(tabindex='-1', role='dialog')
+  .modal-dialog(role='document')
+    .modal-content
+      .modal-header
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+          span(aria-hidden='true') ×
+        h4.modal-title(style="font-family:'Muli', sans-serif") Ingrese su búsqueda
+      .modal-body
+        // Formulario de busqueda
+        form(action="#", method="get", id="bloque-buscar", class="inline-form")
+          div(class="contenedor-bloque-buscar")
+            input(name="slug", type="text", placeholder="Buscar")
+            input(type="submit", value="Buscar")

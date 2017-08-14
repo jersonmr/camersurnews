@@ -1,26 +1,30 @@
-header.header    
-    section.header__cintillo.hidden-xs
-        .header__cintillo__hora
-            span 11:00 a.m
-        .header__cintillo__info
-            marquee
-                p.
-                    Tasas cambiarias e indices bursátiles - Tasas cambiarias e indices bursátiles - Tasas cambiarias e indices bursátiles
-        .header__cintillo__fecha
-            .header__cintillo__fecha__dia-mes
-                span 17-03
-            .header__cintillo__fecha__anio
-                span 17
-    .container
-        .row
-            section.header__navegacion
-                .col-xs-12.col-sm-12.contenedor-logo
-                    .logo.center-block
-                        img.logo__img(src="img/camersurnews_logo.png", alt="Camersurnews logo", class="img-responsive")
-                //- Navbar (Menu)
-                include _navbar
+header.header
+  section.header__cintillo.hidden-xs
+    .header__cintillo__hora
+      span 11:00 a.m
+    .header__cintillo__info
+      marquee
+        p.
+          Tasas cambiarias e indices bursátiles - Tasas cambiarias e indices bursátiles - Tasas cambiarias e indices bursátiles
+    .header__cintillo__fecha
+      .header__cintillo__fecha__dia-mes
+        span 17-03
+      .header__cintillo__fecha__anio
+        span 17
+  .container
+    .row
+      section.header__navegacion
+        .col-xs-12.col-sm-12.col-md-3.contenedor-logo.text-center
+          a(href="index.html")
+            img.logo__img(src="img/camersurnews_logo.png", alt="Camersurnews logo")
+        //- Navbar (Menu)
+        include _navbar
 
-        .row
-            .hidden-xs.col-sm-12.col.md-12.cmsnews-banner
-                img(src="img/bannerTDG.png", alt="Banner TDG", class="img-responsive")
+        //- Modal caja de busqueda
+        include ../modals/busqueda
+
+    .row
+      .hidden-xs.cmsnews-banner
+        a(href="http://www.globaltdg.com", target="_blank")
+          img(src="img/bannerTDG.png", alt="Banner TDG", class="img-responsive")
 

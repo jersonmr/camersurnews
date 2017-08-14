@@ -20,10 +20,10 @@
   &--noticia {
     border-bottom: 2px solid $azul-corporativo;
     display: block;
-    font-size: 1.4em;
-    text-align: center;
-    margin-top: 0.3em;
-    width: 75%;
+    font-size: 1.2em;
+    line-height: 1.2;
+    text-align: left;
+    margin-top: 1em;
   }
   &--detalle {
     text-transform: capitalize;
@@ -34,6 +34,11 @@
     font-size: 0.9em;
     margin: 1em auto;
     text-align: center;
+  }
+  &--categoria {
+    font-family: $muli-font;
+    font-size: 1.2em;
+    line-height: 1.2;
   }
 }
 // Fecha
@@ -48,5 +53,45 @@
   @include media(md) {
     display: flex;
     justify-content: center;
+    width: 100%;
+  }
+  a {
+    text-align: center;
+    img {
+      min-width: 100%;
+    }
+  }
+}
+
+// Tag para noticias
+.noticias-tag {
+  border-radius: 12px;
+  padding: 0.25rem 1rem;
+  position: absolute;
+  left: 0.25rem;
+  top: 0.25rem;
+  color: #fff;
+  font-family: $josefin-font;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  &--comercio {
+    background-color: categoria-color(comercio);
+  }
+  &--politica {
+    background-color: categoria-color(politica);
+  }
+  &--economia {
+    background-color: categoria-color(economia);
+  }
+  &--negocios {
+    background-color: categoria-color(negocios);
+  }
+}
+
+// Link de fecha de la noticia
+.link-fecha {
+  border-bottom: 1px solid $azul-corporativo;
+  &:after {
+    @include flecha-derecha;
   }
 }

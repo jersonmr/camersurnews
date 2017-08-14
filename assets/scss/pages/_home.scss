@@ -2,19 +2,30 @@
 .slideshow {
   margin: em(20) 0;
 }
+
 .carousel-control {
   top: 50%;
-  background-image:none !important;
-  filter:none !important;
+  background-image: none !important;
+  filter: none !important;
   @include media(sm) {
     font-size: 2em;
   }
 }
+
+.carousel-inner {
+  img {
+    min-width: 100%;
+  }
+}
+
 // Oportunidades de negocio
 .oportunidades {
   background: $gris-claro;
   border-top: 6px solid $amarillo-corporativo;
   margin: 10px auto;
+  .container {
+    padding: 1rem;
+  }
   &__item {
     margin: 20px auto;
   }
@@ -29,12 +40,18 @@
     text-align: center;
   }
 }
+
 // Noticia destacada | Bloque principal
 .noticia-principal {
   margin: 10px auto;
 }
+
 .destacada {
-  &__descripcion {
+  img {
+    border-radius: 8px;
+    min-width: 100%;
+  }
+  &__descripcion, p {
     font-family: $muli-font;
     font-size: 0.9em;
     text-align: justify;
@@ -46,19 +63,48 @@
     }
   }
 }
+
 // Listado noticias
+.contenedor-noticias {
+  margin: 2em auto;
+}
+
 .noticias {
-  margin: 10px auto;
+  display: flex;
+  flex-wrap: wrap;
   &__item {
+    /*float: none;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 0.7em;
+    position: relative;*/
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
+    margin: 0.5rem;
+    position: relative;
+    width: 100%;
+    @include media(sm) {
+      width: calc(50% - 1rem);
+    }
+    @include media(md) {
+      width: calc(33.3% - 1rem);
+    }
+    h3 {
+      border-bottom: none !important;
+    }
+    hr {
+      border: thin solid $azul-corporativo;
+      margin-top: auto;
+      width: 100%;
+    }
   }
   &__img {
+    border-radius: 8px;
     margin-bottom: 0.5em;
+    min-width: 100%;
   }
 }
+
 // Sidebar | Camersur TV
 .camersurtv {
   margin: 0.5em auto;
@@ -66,6 +112,7 @@
     margin-top: 1em;
   }
 }
+
 // Opiniones
 .opiniones {
   &__clientes {
@@ -129,9 +176,52 @@
     }
   }
 }
+
 // Ultimas Noticias
 .ult-noticias {
   margin: 0.5em auto;
+  &__item {
+    margin-bottom: 0.7em;
+    position: relative;
+    width: 100%;
+    @include media(sm) {
+      float: none;
+      display: inline-block;
+      vertical-align: top;
+      width: calc(50% - 0.5rem);
+    }
+    .noticias-tag {
+      left: 1.5rem;
+    }
+  }
+  &__img {
+    border-radius: 8px;
+    height: 190px;
+    min-width: 100%;
+    overflow: hidden;
+  }
+  &__tag {
+    font-family: $muli-font;
+    position: absolute;
+    top: 0.5em;
+    left: 1.5em;
+    border-radius: 18px;
+    padding: 0.2em 0.5em;
+    font-size: 0.9em;
+    color: #fff;
+    &--comercio {
+      background: $seccion-comercio;
+    }
+    &--economia {
+      background: $seccion-economia;
+    }
+    &--politica {
+      background: $seccion-politica;
+    }
+    &--negocios {
+      background: $seccion-empresas-negocios;
+    }
+  }
   &__titulo {
     font-family: $muli-font;
     font-size: 1.6em;
@@ -154,6 +244,7 @@
     }
   }
 }
+
 // Anunciantes
 .anunciantes {
   @include media(sm) {
@@ -165,6 +256,7 @@
     }
   }
 }
+
 // Sociales
 .sociales {
   display: flex;
@@ -172,12 +264,11 @@
   align-items: center;
   justify-content: center;
   margin: 1em auto;
-  padding: 0 15px;
+  text-align: center;
   @include media(sm) {
     flex-direction: row;
   }
   &__item {
-    border: 1px solid rgba(#000, 0.4);
     box-shadow: 0 0 0.5em rgba(#000, 0.6);
     height: 460px;
     width: 100%;
@@ -189,3 +280,18 @@
   }
 }
 
+// Estilos para navegacion de los cursos
+.owl-nav {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem 0;
+  .owl-prev, .owl-next {
+    color: $azul-corporativo;
+    font-size: 3rem;
+    margin: 0 0.5rem;
+    transition: all 0.5s ease;
+    &:hover {
+      color: $amarillo-corporativo;
+    }
+  }
+}

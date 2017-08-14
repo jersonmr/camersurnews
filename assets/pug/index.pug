@@ -2,159 +2,238 @@ extends inc/layout
 
 block content
 
-    include inc/_titulo-home
+  include inc/_titulo-home
 
-    include inc/_slideshow
+  include inc/_slideshow
 
+  .container
+    .row
+      .col-xs-12
+        section.divisor1
+
+  .oportunidades
+    h2.cmsnews-encabezado OPORTUNIDADES DE NEGOCIO
     .container
+      .row
+        section.text-center
+          div(class="cards owl-carousel")
+            a(href="#")
+              img.oportunidades__img.img-responsive.owl-img(src="http://placehold.it/237x121")
+              h4.oportunidades__descripcion
+                | Lorem Ipsum
+            a(href="#")
+              img.oportunidades__img.img-responsive.owl-img(src="http://placehold.it/237x121")
+              h4.oportunidades__descripcion
+                | Lorem Ipsum
+            a(href="#")
+              img.oportunidades__img.img-responsive.owl-img(src="http://placehold.it/237x121")
+              h4.oportunidades__descripcion
+                | Lorem Ipsum
+            a(href="#", data-toggle="modal", data-target="#bloque-newsletter")
+              img.oportunidades__img.img-responsive.owl-img(src="http://placehold.it/237x121")
+              h4.oportunidades__descripcion
+                | Boletín informativo
+            a(href="#")
+              img.oportunidades__img.img-responsive.owl-img(src="http://placehold.it/237x121")
+              h4.oportunidades__descripcion
+                | Lorem Ipsum
+            a(href="#")
+              img.oportunidades__img.img-responsive.owl-img(src="http://placehold.it/237x121")
+              h4.oportunidades__descripcion
+                | Lorem Ipsum
+
+  .container
+    .row
+      .col-xs-12.col-md-8
+        section.noticia-principal
+          .destacada
+            img.destacada__img(src="img/politica1.png", class="img-responsive", alt="Política 1")
+            h3.cmsnews-titulo
+              a(href="#") Lorem Ipsum
+            span.cmsnews-fecha 17/03/2017 11:00 a.m
+            p.destacada__descripcion Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae lacinia mauris. Suspendisse et enim sit amet urna faucibus aliquam. Suspendisse potenti. Donec lacinia augue odio, a dictum diam tempus et. Morbi dapibus, ex a cursus dapibus, risus elit elementum nibh, in molestie ligula nisl vitae felis. Mauris congue viverra pellentesque. Nulla ullamcorper aliquam massa a aliquet. Etiam mattis tellus elit, vel efficitur purus sollicitudin in.
+
+        .clearfix
+
+        .noticias
+          article.noticias__item
+            span(class="noticias-tag noticias-tag--comercio") Comercio
+            img.noticias__img(src="http://lorempixel.com/344/282/sports/1", alt="noticia 1", class="img-responsive")
+            a(href="#", class="link-fecha")
+              span.cmsnews-fecha 17/03/2017 11:00 a.m
+            h3.cmsnews-titulo.cmsnews-titulo--noticia Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+            hr
+
+          article.noticias__item
+            span(class="noticias-tag noticias-tag--economia") Economía
+            img.noticias__img(src="http://lorempixel.com/344/282/business/1", alt="noticia 2", class="img-responsive")
+            a(href="#", class="link-fecha")
+              span.cmsnews-fecha 17/03/2017 11:00 a.m
+            h3.cmsnews-titulo.cmsnews-titulo--noticia Lorem Ipsum
+            hr
+
+          article.noticias__item
+            span(class="noticias-tag noticias-tag--negocios") Empresas y Negocios
+            img.noticias__img(src="http://lorempixel.com/344/282/business/2", alt="noticia 3", class="img-responsive")
+            a(href="#", class="link-fecha")
+              span.cmsnews-fecha 17/03/2017 11:00 a.m
+            h3.cmsnews-titulo.cmsnews-titulo--noticia Lorem Ipsum
+            hr
+
+          article.noticias__item
+            span(class="noticias-tag noticias-tag--politica") Política
+            img.noticias__img(src="http://lorempixel.com/344/282/sports/1", alt="noticia 4", class="img-responsive")
+            a(href="#", class="link-fecha")
+              span.cmsnews-fecha 17/03/2017 11:00 a.m
+            h3.cmsnews-titulo.cmsnews-titulo--noticia Lorem Ipsum
+            hr
+
+          article.noticias__item
+            span(class="noticias-tag noticias-tag--comercio") Comercio
+            img.noticias__img(src="http://lorempixel.com/344/282/business/3", alt="noticia 5", class="img-responsive")
+            a(href="#", class="link-fecha")
+              span.cmsnews-fecha 17/03/2017 11:00 a.m
+            h3.cmsnews-titulo.cmsnews-titulo--noticia Lorem Ipsum
+            hr
+
+          article.noticias__item
+            span(class="noticias-tag noticias-tag--economia") Economía
+            img.noticias__img(src="http://lorempixel.com/344/282/sports/3", alt="noticia 6", class="img-responsive")
+            a(href="#", class="link-fecha")
+              span.cmsnews-fecha 17/03/2017 11:00 a.m
+            h3.cmsnews-titulo.cmsnews-titulo--noticia Lorem Ipsum
+            hr
+
         .row
-            .col-xs-12
-                section.divisor1
+          .col-xs-12.pull-right
+            .buttons-nav
+              .buttons-nav__item.buttons-nav__item--prev
+                a(href="#") Más recientes
+              .buttons-nav__item.buttons-nav__item--next
+                a(href="#") Más antigüos
 
-    .oportunidades
-        h2.cmsnews-encabezado OPORTUNIDADES DE NEGOCIO
-        .container
-            .row
-                section.text-center
-                    .col-xs-12.col-sm-6.col-md-3
-                        article.oportunidades__item
-                            img.oportunidades__img(src="http://placehold.it/237x121")
-                            p.oportunidades__descripcion Lorem Ipsum
-                    .col-xs-12.col-sm-6.col-md-3
-                        article.oportunidades__item
-                            img.oportunidades__img(src="http://placehold.it/237x121")
-                            p.oportunidades__descripcion Lorem Ipsum
-                    .col-xs-12.col-sm-6.col-md-3
-                        article.oportunidades__item
-                            img.oportunidades__img(src="http://placehold.it/237x121")
-                            p.oportunidades__descripcion Lorem Ipsum
-                    .col-xs-12.col-sm-6.col-md-3
-                        article.oportunidades__item
-                            img.oportunidades__img(src="http://placehold.it/237x121")
-                            p.oportunidades__descripcion Lorem Ipsum
+      // Sidebar
+      include inc/_sidebar
 
-    .container
+    .row
+      .hidden-xs.col-md-12.cmsnews-banner
+        a(href="http://www.camersur.com", target="_blank")
+          img(src="img/Banner5.png", alt="Banner publicitario", class="img-responsive")
+    .row
+      section.opiniones
+        h2.cmsnews-encabezado.cmsnews-encabezado--opinion OPINIÓN Y ANÁLISIS
+        .opiniones__clientes
+          article.col-xs-12.col-sm-3.opiniones__item
+            figure.opiniones__img
+              img(src="img/opinion1.png", class="img-responsive img-circle")
+            h3.cmsnews-titulo Lorem Ipsum
+            p.opiniones__usuario Ramón Pacheco
+          article.col-xs-12.col-sm-3.opiniones__item
+            figure.opiniones__img
+              img(src="img/opinion2.png", class="img-responsive img-circle")
+            h3.cmsnews-titulo Lorem Ipsum
+            p.opiniones__usuario Luisa de Gregorio
+          article.col-xs-12.col-sm-3.opiniones__item
+            figure.opiniones__img
+              img(src="img/opinion3.png", class="img-responsive img-circle")
+            h3.cmsnews-titulo Lorem Ipsum
+            p.opiniones__usuario Matiew Forest
+        .opiniones__colores
+          div
+          div
+          div
+    .row
+      section.col-md-8.ult-noticias
+        h1.ult-noticias__titulo ÚLTIMAS NOTICIAS
         .row
-            .col-xs-12.col-md-8
-                section.noticia-principal
-                    .destacada
-                        img.destacada__img(src="img/politica1.png", class="img-responsive", alt="Política 1")
-                        h3.cmsnews-titulo Lorem Ipsum
-                        span.cmsnews-fecha 17/03/2017 11:00 a.m
-                        p.destacada__descripcion Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae lacinia mauris. Suspendisse et enim sit amet urna faucibus aliquam. Suspendisse potenti. Donec lacinia augue odio, a dictum diam tempus et. Morbi dapibus, ex a cursus dapibus, risus elit elementum nibh, in molestie ligula nisl vitae felis. Mauris congue viverra pellentesque. Nulla ullamcorper aliquam massa a aliquet. Etiam mattis tellus elit, vel efficitur purus sollicitudin in.
-
-                .clearfix
-
-                .noticias
-                    article.col-xs-12.col-sm-6.col-md-4.noticias__item
-                        img.noticias__img(src="img/noticia1.png", alt="noticia 1", class="img-responsive")
-                        span.cmsnews-fecha 17/03/2017 11:00 a.m
-                        h3.cmsnews-titulo.cmsnews-titulo--noticia Lorem Ipsum
-
-                    article.col-xs-12.col-sm-6.col-md-4.noticias__item
-                        img.noticias__img(src="img/noticia2.png", alt="noticia 2", class="img-responsive")
-                        span.cmsnews-fecha 17/03/2017 11:00 a.m
-                        h3.cmsnews-titulo.cmsnews-titulo--noticia Lorem Ipsum
-
-                    article.col-xs-12.col-sm-6.col-md-4.noticias__item
-                        img.noticias__img(src="img/noticia3.png", alt="noticia 3", class="img-responsive")
-                        span.cmsnews-fecha 17/03/2017 11:00 a.m
-                        h3.cmsnews-titulo.cmsnews-titulo--noticia Lorem Ipsum
-
-                    article.col-xs-12.col-sm-6.col-md-4.noticias__item
-                        img.noticias__img(src="img/noticia1.png", alt="noticia 4", class="img-responsive")
-                        span.cmsnews-fecha 17/03/2017 11:00 a.m
-                        h3.cmsnews-titulo.cmsnews-titulo--noticia Lorem Ipsum
-
-                    article.col-xs-12.col-sm-6.col-md-4.noticias__item
-                        img.noticias__img(src="img/noticia2.png", alt="noticia 5", class="img-responsive")
-                        span.cmsnews-fecha 17/03/2017 11:00 a.m
-                        h3.cmsnews-titulo.cmsnews-titulo--noticia Lorem Ipsum
-
-                    article.col-xs-12.col-sm-6.col-md-4.noticias__item
-                        img.noticias__img(src="img/noticia3.png", alt="noticia 6", class="img-responsive")
-                        span.cmsnews-fecha 17/03/2017 11:00 a.m
-                        h3.cmsnews-titulo.cmsnews-titulo--noticia Lorem Ipsum
-
-                .row
-                    .col-xs-12.pull-right
-                        .buttons-nav
-                            .buttons-nav__item.buttons-nav__item--prev
-                                a Más antigüos
-                            .buttons-nav__item.buttons-nav__item--next
-                                a Más recientes
-
-            // Sidebar
-            include inc/_sidebar
-
+          article.col-xs-12.col-sm-6.ult-noticias__item
+            span(class="noticias-tag noticias-tag--comercio") Comercio
+            img(src="http://lorempixel.com/1024/576/business/1", class="img-responsive ult-noticias__img")
+            div.ult-noticias__descripcion.ult-noticias__descripcion--comercio
+              a(href="#", class="link-fecha")
+                span.cmsnews-fecha 17/03/2017 11:00 a.m
+              a(href="#")
+                h3.cmsnews-titulo "Lorem Ipsum"
+          article.col-xs-12.col-sm-6.ult-noticias__item
+            span(class="noticias-tag noticias-tag--politica") Política
+            img(src="http://lorempixel.com/1024/576/business/2", class="img-responsive ult-noticias__img")
+            div.ult-noticias__descripcion.ult-noticias__descripcion--politica
+              a(href="#", class="link-fecha")
+                span.cmsnews-fecha 17/03/2017 11:00 a.m
+              a(href="#")
+                h3.cmsnews-titulo "Lorem Ipsum"
+          article.col-xs-12.col-sm-6.ult-noticias__item
+            span(class="noticias-tag noticias-tag--economia") Economía
+            img(src="http://lorempixel.com/1024/576/business/3", class="img-responsive ult-noticias__img")
+            div.ult-noticias__descripcion.ult-noticias__descripcion--economia
+              a(href="#", class="link-fecha")
+                span.cmsnews-fecha 17/03/2017 11:00 a.m
+              a(href="#")
+                h3.cmsnews-titulo "Lorem Ipsum"
+          article.col-xs-12.col-sm-6.ult-noticias__item
+            span(class="noticias-tag noticias-tag--negocios") Negocios
+            img(src="http://lorempixel.com/1024/576/business/4", class="img-responsive ult-noticias__img")
+            div.ult-noticias__descripcion.ult-noticias__descripcion--negocios
+              a(href="#", class="link-fecha")
+                span.cmsnews-fecha 17/03/2017 11:00 a.m
+              a(href="#")
+                h3.cmsnews-titulo "Lorem Ipsum"
         .row
-            .hidden-xs.col-md-12.cmsnews-banner
-                img(src="img/Banner5.png", alt="Banner publicitario", class="img-responsive")
-        .row
-            section.opiniones
-                h2.cmsnews-encabezado.cmsnews-encabezado--opinion OPINIÓN Y ANÁLISIS
-                .opiniones__clientes
-                    article.col-xs-12.col-sm-3.opiniones__item
-                        figure.opiniones__img
-                            img(src="img/opinion1.png", class="img-responsive img-circle")
-                        h3.cmsnews-titulo Lorem Ipsum
-                        p.opiniones__usuario Ramón Pacheco
-                    article.col-xs-12.col-sm-3.opiniones__item
-                        figure.opiniones__img
-                            img(src="img/opinion2.png", class="img-responsive img-circle")
-                        h3.cmsnews-titulo Lorem Ipsum
-                        p.opiniones__usuario Luisa de Gregorio
-                    article.col-xs-12.col-sm-3.opiniones__item
-                        figure.opiniones__img
-                            img(src="img/opinion3.png", class="img-responsive img-circle")
-                        h3.cmsnews-titulo Lorem Ipsum
-                        p.opiniones__usuario Matiew Forest
-                .opiniones__colores
-                    div
-                    div
-                    div
-        .row
-            section.col-xs-12.col-sm-12.col-md-8.ult-noticias
-                h1.ult-noticias__titulo ÚLTIMAS NOTICIAS
-                .row
-                    article.col-xs-12.col-sm-6.ult-noticias__item
-                        img.ult-noticias__img(src="img/un2.png", class="img-responsive")
-                        div.ult-noticias__descripcion.ult-noticias__descripcion--comercio
-                            span.cmsnews-fecha 17/03/2017 11:00 a.m
-                            h3.cmsnews-titulo "Lorem Ipsum"
-                    article.col-xs-12.col-sm-6.ult-noticias__item
-                        img.ult-noticias__img(src="img/un1.png", class="img-responsive")
-                        div.ult-noticias__descripcion.ult-noticias__descripcion--politica
-                            span.cmsnews-fecha 17/03/2017 11:00 a.m
-                            h3.cmsnews-titulo "Lorem Ipsum"
-                    article.col-xs-12.col-sm-6.ult-noticias__item
-                        img.ult-noticias__img(src="img/un1.png", class="img-responsive")
-                        div.ult-noticias__descripcion.ult-noticias__descripcion--economia
-                            span.cmsnews-fecha 17/03/2017 11:00 a.m
-                            h3.cmsnews-titulo "Lorem Ipsum"
-                    article.col-xs-12.col-sm-6.ult-noticias__item
-                        img.ult-noticias__img(src="img/un2.png", class="img-responsive")
-                        div.ult-noticias__descripcion.ult-noticias__descripcion--negocios
-                            span.cmsnews-fecha 17/03/2017 11:00 a.m
-                            h3.cmsnews-titulo "Lorem Ipsum"
-                .row
-                    .col-xs-12
-                        .buttons-nav
-                            .buttons-nav__item.buttons-nav__item--prev
-                                a Más antigüos
-                            .buttons-nav__item.buttons-nav__item--next
-                                a Más recientes
+          .col-xs-12
+            .buttons-nav
+              .buttons-nav__item.buttons-nav__item--prev
+                a(href="#") Más recientes
+              .buttons-nav__item.buttons-nav__item--next
+                a(href="#") Más antigüos
 
-            aside.hidden-xs.col-sm-12.col-md-4.anunciantes
-                .row
-                    div.col-sm-4.col-md-12.anunciantes__item
-                        img(src="img/Banner1.png", class="img-responsive anunciantes__img")
-                    div.col-sm-4.col-md-12.anunciantes__item
-                        img(src="img/Banner2.png", class="img-responsive anunciantes__img")
-                    div.col-sm-4.col-md-12.anunciantes__item
-                        img(src="img/Banner3.png", class="img-responsive anunciantes__img")
-        // Redes sociales
-        include inc/_redes
+      aside.hidden-xs.col-sm-12.col-md-4.anunciantes
+        .row
+          div.col-sm-4.col-md-12.anunciantes__item
+            a(href="#", target="_blank")
+              img(src="img/Banner1.png", class="img-responsive anunciantes__img")
+          div.col-sm-4.col-md-12.anunciantes__item
+            a(href="#", target="_blank")
+              img(src="img/Banner2.png", class="img-responsive anunciantes__img")
+          div.col-sm-4.col-md-12.anunciantes__item
+            a(href="#", target="_blank")
+              img(src="img/Banner3.png", class="img-responsive anunciantes__img")
+    // Redes sociales
+    include inc/_redes
+
+block scripts
+  script.
+    //- Detectando numero de items dentro del carousel
+    var numItems = $(".owl-carousel").find('.owl-img').length;
+
+    //Galería de imágenes con owl-carousel
+    $('.owl-carousel').owlCarousel({
+      autoplay: true,
+      margin: 0,
+      nav: true,
+      autoWidth: false,
+      navText: ['<i class="fa fa-chevron-left" title="Anterior"></i>', '<i class="fa  fa-chevron-right" title="Siguiente"></i>'],
+      responsive: {
+        0: {
+          items: 1,
+          margin: 15,
+        },
+        768: {
+          items: 2,
+          margin: 20,
+          loop: (numItems > 2) ? true : false,
+        },
+        992: {
+          items: 3,
+          margin: 15,
+          loop: (numItems > 3) ? true : false,
+        },
+        1200: {
+            items: 4,
+            margin: 15,
+            loop: (numItems > 4) ? true : false,
+        },
+      }
+    });
 
 
 

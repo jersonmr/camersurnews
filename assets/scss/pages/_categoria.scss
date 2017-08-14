@@ -2,25 +2,33 @@
   font-family: $muli-font;
   line-height: 1.5;
 }
-.categoria-descripcion {
-  border-left: 1em solid $azul-corporativo-oscuro;
-  padding-left: 0.5em;
-}
 .categoria-principal {
   margin: 2em auto;
   &__img {
-    img {
-      border-right: 1em solid $azul-corporativo-oscuro;
+    &--comercio {
+      border-right: 1em solid $seccion-comercio;
+    }
+    &--economia {
+      border-right: 1em solid $seccion-economia;
+    }
+    &--politica {
+      border-right: 1em solid $seccion-politica;
+    }
+    &--negocios {
+      border-right: 1em solid $seccion-empresas-negocios;
     }
   }
   &__descripcion {
     margin: 1em auto;
   }
+  p {
+    line-height: 1.2;
+    margin-top: 1.2em;
+  }
 }
 .categoria-secundaria {
   margin: 1em auto;
   &__publicidad {
-    //margin: 1.5em auto;
     figure {
       margin-bottom: 2em;
     }
@@ -54,8 +62,41 @@
   }
   .categoria-noticias {
     margin: 1em auto;
+    @include media(md) {
+      display: flex;
+    }
     &__item {
+      display: flex;
+      flex-basis: 50%;
+      flex-wrap: wrap;
+      justify-content: center;
       margin: 1em auto;
+      padding: 0 0.5em;
+      @include media(sm) {
+        justify-content: flex-start;
+      }
+    }
+    img {
+      overflow: hidden;
+    }
+  }
+  .categoria-descripcion {
+    font-family: $muli-font;
+    padding-left: 0.5em;
+    p, span {
+      line-height: 1.5;
+    }
+    &--politica {
+      border-left: 1em solid $seccion-politica;
+    }
+    &--comercio {
+      border-left: 1em solid $seccion-comercio;
+    }
+    &--economia {
+      border-left: 1em solid $seccion-economia;
+    }
+    &--negocios {
+      border-left: 1em solid $seccion-empresas-negocios;
     }
   }
 }

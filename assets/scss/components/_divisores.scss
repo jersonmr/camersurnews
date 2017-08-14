@@ -48,8 +48,19 @@
 }
 // Linea de division de noticias relacionadas
 .divisor-noticias {
-  border: 2px solid $seccion-comercio;
   margin: 1em auto;
   height: 4px;
   width: 40%;
+  &--comercio {
+    border: 2px solid $seccion-comercio;
+  }
+  &--politica {
+    border: 2px solid $seccion-politica;
+  }
+  &--economia {
+    border: 2px solid $seccion-economia;
+  }
+  &--negocios {
+    border: 2px solid $seccion-empresas-negocios;
+  }
 }

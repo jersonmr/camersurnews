@@ -10,3 +10,14 @@ p {
   font-family: $muli-font;
   text-align: justify;
 }
+a {
+  color: #000;
+  &:hover {
+    color: $azul-corporativo;
+    text-decoration: none;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}

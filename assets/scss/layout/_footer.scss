@@ -4,7 +4,7 @@
   color: #fff;
   font-family: $muli-font;
   margin-top: 2em;
-  padding: 1em;
+  padding: 3em 2em 1em;
   position: relative;
   text-align: center;
   &:before {
@@ -44,6 +44,15 @@
         color: $amarillo-corporativo;
         font-weight: bold;
         text-decoration: none;
+      }
+    }
+  }
+  &__camersur-logo {
+    img {
+      @include img-responsive;
+      @include media(sm) {
+        margin: 0 auto;
+        padding-top: 2em;
       }
     }
   }

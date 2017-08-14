@@ -1,23 +1,22 @@
-.col-xs-12.col-sm-8.navbar-menu
-    nav.navbar.navbar-default
-        .navbar-header.hidden-md.hidden-lg
-            button.navbar-toggle.collapsed(type="button", data-toggle="collapse", data-target="#menu-top", aria-expanded="false")
-                span.sr-only Toggle navigation
-                span.icon-bar
-                span.icon-bar
-                span.icon-bar
-            a.navbar-brand.hidden-sm Camersurnews
-        .collapse.navbar-collapse#menu-top
-            ul.nav.navbar-nav.menu
-                li.menu__item: a.menu__link(href="index.html") Home
-                li.menu__item: a.menu__link(href="categoria.html") Comercio
-                li.menu__item: a.menu__link(href="#") Economía
-                li.menu__item: a.menu__link(href="#") Política
-                li.menu__item: a.menu__link(href="#") Empresas y Negocios
-.col-xs-12.col-sm-4.caja-busqueda
-    form.navbar-form
-        .input-group
-            input.form-control(type="search", placeholder="Buscar")
-            span.input-group-btn#basic-addon2
-                button.btn.btn-default
-                    span.icon-search
+div(class="col-xs-12 col-sm-12 col-md-9 navbar-menu")
+  nav.navbar.navbar-default
+    button.navbar-toggle.collapsed(type="button", data-toggle="collapse", data-target="#menu-top", aria-expanded="false")
+      span.sr-only Toggle navigation
+      span.icon-bar
+      span.icon-bar
+      span.icon-bar
+
+    a.navbar-brand.hidden-md.hidden-lg Camersurnews
+
+    // Boton de busqueda
+    button.boton-buscar(data-toggle='modal', data-target='#caja-busqueda', aria-expanded='false')
+      span.fa.fa-search
+
+    // Items del menu
+    .collapse.navbar-collapse#menu-top
+      ul.nav.navbar-nav.menu
+        li.menu__item.inicio: a.menu__link(href="index.html") Inicio
+        li.menu__item.comercio: a.menu__link(href="categoria.html") Comercio
+        li.menu__item.economia: a.menu__link(href="#") Economía
+        li.menu__item.politica: a.menu__link(href="#") Política
+        li.menu__item.negocios: a.menu__link(href="#") Empresas y Negocios

@@ -5,6 +5,12 @@
 @import "base/reset";
 @import "base/base";
 
+/*
+@import "vendors/bootstrap.min";
+@import "vendors/font-awesome.min";
+@import "vendors/owl.carousel.min";
+*/
+
 @import "layout/navigation";
 @import "layout/header";
 @import "layout/footer";
@@ -13,6 +19,9 @@
 @import "components/buttons";
 @import "components/divisores";
 
+
 @import "pages/home";
 @import "pages/categoria";
 @import "pages/detalle";
+@import "pages/resultados";
+@import "pages/historial";
