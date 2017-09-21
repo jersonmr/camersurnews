@@ -65,13 +65,14 @@
       text-align: center;
     }
     @include media(sm) {
+      margin: 0 auto 1em;
       p {
         text-align: right;
       }
     }
     @include media(md) {
       p {
-        margin: 1em auto;
+        margin: 0 auto 1em;
         font-size: 1.2em;
         font-weight: bold;
       }

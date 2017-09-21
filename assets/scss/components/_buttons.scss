@@ -16,7 +16,7 @@
     margin: 0 5px;
     padding: 0.5em;
     position: relative;
-    @include media(sm) {
+    @include media(md) {
       width: 25%;
     }
 

@@ -103,8 +103,23 @@
   margin: 0 auto;
   text-align: center;
   width: 100%;
+  @include media(sm) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  @include media(md) {
+    display: block;
+  }
   &__item {
     @include img-responsive;
     margin-bottom: 1em;
+    width: 100%;
+    @include media(sm) {
+      width: calc(50% - 1em);
+    }
+    @include media(md) {
+      width: 100%;
+    }
   }
 }

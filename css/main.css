@@ -223,7 +223,7 @@ img {
 
 .navbar-menu .navbar-default .navbar-brand {
   color: #f7f7f7;
-  font-size: 1.1em;
+  font-size: 1em;
   text-transform: uppercase;
 }
 
@@ -703,6 +703,9 @@ img {
 }
 
 @media (min-width: 768px) {
+  .footer .contacto {
+    margin: 0 auto 1em;
+  }
   .footer .contacto p {
     text-align: right;
   }
@@ -710,7 +713,7 @@ img {
 
 @media (min-width: 992px) {
   .footer .contacto p {
-    margin: 1em auto;
+    margin: 0 auto 1em;
     font-size: 1.2em;
     font-weight: bold;
   }
@@ -876,7 +879,7 @@ img {
   position: relative;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .buttons-nav__item {
     width: 25%;
   }
@@ -1741,7 +1744,7 @@ img {
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.2em;
   font-weight: bold;
-  margin-top: 0.2em;
+  margin-top: 0.5em;
 }
 
 .cuerpo-detalle {
@@ -2011,10 +2014,45 @@ img {
   width: 100%;
 }
 
+@media (min-width: 768px) {
+  .resultados-publicidad {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 992px) {
+  .resultados-publicidad {
+    display: block;
+  }
+}
+
 .resultados-publicidad__item {
   max-width: 100%;
   height: auto;
   margin-bottom: 1em;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .resultados-publicidad__item {
+    width: calc(50% - 1em);
+  }
+}
+
+@media (min-width: 992px) {
+  .resultados-publicidad__item {
+    width: 100%;
+  }
 }
 
 .historial {
