@@ -48,22 +48,27 @@
 			min-width: 100%;
 		}
 	}
-  &__descripcion {
+  /*&__descripcion {
 		font-size: 1.1em;
     line-height: 1.2;
     margin-bottom: 0.4em;
-  }
+  }*/
   &__autor {
     font-family: $josefin-font;
     font-size: 1.2em;
     font-weight: bold;
     margin-top: 0.5em;
   }
+  p {
+		font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 0.4em;
+  }
 }
 .cuerpo-detalle {
   font-family: $muli-font;
   p {
-		font-size: 1.1em;
+		font-size: 22px;
     line-height: 1.5;
     margin-bottom: 1em;
   }

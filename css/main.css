@@ -8,7 +8,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 
@@ -1728,16 +1727,15 @@ img {
 
 .header__detalle {
   margin-bottom: 1em;
+  /*&__descripcion {
+		font-size: 1.1em;
+    line-height: 1.2;
+    margin-bottom: 0.4em;
+  }*/
 }
 
 .header__detalle__img img {
   min-width: 100%;
-}
-
-.header__detalle__descripcion {
-  font-size: 1.1em;
-  line-height: 1.2;
-  margin-bottom: 0.4em;
 }
 
 .header__detalle__autor {
@@ -1747,12 +1745,18 @@ img {
   margin-top: 0.5em;
 }
 
+.header__detalle p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 0.4em;
+}
+
 .cuerpo-detalle {
   font-family: "Muli", sans-serif;
 }
 
 .cuerpo-detalle p {
-  font-size: 1.1em;
+  font-size: 22px;
   line-height: 1.5;
   margin-bottom: 1em;
 }
